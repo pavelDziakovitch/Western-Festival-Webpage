@@ -1,0 +1,123 @@
+#forMaps{
+    width: 35vw;
+    margin-bottom: 1.5vh;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+footer{
+    width: 98vw;
+}
+.forBetterReading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+table{
+    border-spacing: 3vw 3vh;
+}
+.iconsLocation{
+    max-width: 15vh;
+    max-height: 15vh;
+}
+p, td>p{
+    font-family: 'Crimson Text', serif;
+    font-size:2em;
+    font-weight: bold;
+    margin-block-start: 0.4em;
+    color:white;
+    text-decoration: none;
+}
+p>a{
+    color:blanchedalmond;
+    text-decoration: none;
+    font-size:1.2em;
+    cursor: pointer;
+}
+h1,h2{
+    font-family: 'Rye', cursive;
+    color: white;
+}
+h1{
+    font-size: 2.3em;
+
+}
+h2{
+    font-size: 2em;
+
+}
+#locationMapImg{
+    width: 55vw;
+    height: 60vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 17px 17px rgba(219, 128, 9, 0.726); 
+    transition: all 1s ease;
+}
+#locationMapImg:hover{
+    width: 75vw;
+    height: 80vh;
+    box-shadow: 0px 0px 4px 4px rgba(219, 128, 9, 0.726); 
+}
+
+/*Media-Queries*/
+
+@media screen and (max-width: 1000px) {
+    #forMaps{
+        width: 85vw;
+    }
+    table{
+        border-spacing: 2vw 1vh;
+    }
+    .iconsLocation{
+        max-width: 8vh;
+        max-height: 8vh;
+    }
+    p, td>p{
+        font-size:1.5em;
+    }
+    p>a{
+        font-size:2.8vh;
+    }
+    #locationMapImg{
+        width: 65vw;
+        height: 55vh;
+        border-radius: 20px;
+        box-shadow: 0px 0px 12px 12px rgba(219, 128, 9, 0.726); 
+        transition: all 1s ease;
+    }
+    #locationMapImg:hover{
+        box-shadow: 0px 0px 2px 2px rgba(219, 128, 9, 0.726); 
+        width: 90vw;
+        height: 70vh;
+    }
+    .forBetterReading{
+        width: 95vw;
+    }
+}
+@media screen and (max-width: 350px) {
+    .iconsLocation{
+        max-width: 6vh;
+        max-height: 6vh;
+    }
+    td>p{
+        font-size:2vh;
+    }
+}
+@media screen and (max-height: 650px) {
+    table{
+        width: 100%
+    }
+    .iconsLocation{
+        max-width: 16vh;
+        max-height: 16vh;
+    }
+    p, td>p{
+        font-size:1.3em;
+    }
+    p>a{
+        font-size:1.2em;
+    }
+}

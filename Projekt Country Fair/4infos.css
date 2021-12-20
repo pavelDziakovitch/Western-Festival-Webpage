@@ -1,0 +1,45 @@
+#contact{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rye', cursive;
+    width:100%;
+    align-items: space-around;
+}
+#forInfo{ /* width:vw; text algin: center;*/ 
+    width: 40vw;
+    text-align: center;
+}
+input{
+    width: 40%;
+    align-self: center;
+}
+#sendButton{
+    width:30%
+}
+#sendButton:hover{
+    box-shadow: 0px 0px 5px 5px rgba(219, 128, 9, 0.808); 
+}
+textarea{
+    height:20vh;
+    width: 50%;
+    align-self: center;
+}
+textarea,#sendButton,input{ /*border: 1px black solid;border-radius:10px;*/
+    border: 1px black solid;
+    border-radius:10px;
+}
+@media screen and (max-width: 900px) {
+
+    #forInfo{ 
+        width: 80vw;
+    }
+    input{
+        width: 60%;
+    }
+    #sendButton{
+        width:50%
+    }
+    textarea{
+        width: 65%;
+    }
+}

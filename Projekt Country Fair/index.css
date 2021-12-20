@@ -1,0 +1,223 @@
+/* Font for Text */
+/* font-family: 'Crimson Text', serif; */
+
+/* Font for Headlines */
+/* font-family: 'Rye', cursive; */
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    color :white;
+    background-color: rgb(169, 93, 18);
+    background-image: url(image/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-wrap: anywhere; /* Wörter werden nach Buchstaben unterteilt!*/
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    max-width: 80vw;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+#navbarMain .link:hover, #navbar .link:hover{
+    border-bottom:  3px double black;
+    border-top:  3px double black;
+}
+
+ul{
+    text-decoration: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    list-style: none;
+}
+header, #headerMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rye', cursive;
+    font-size: 2em;
+    height: 10vh;
+    width: 98vw;
+    margin-bottom: 5vh;
+    margin-top: 1vh;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Rye', cursive;
+    align-items: center;
+    font-size: 1.2em;
+    height: 6vh;
+    width: 98vw;
+    margin-bottom: 1%;
+    margin-top: 2vh;
+}
+
+#footerText{
+    color: white;
+}
+
+#navbar, #navbarMain{
+    display: flex;
+    justify-content: space-around;
+    width: 60vw;
+}
+#navLogoDummie {
+    height: 2em;
+    width: 8vw; 
+    order: 1;
+}
+#navbar{
+    order:2;
+}
+#linkLogo{
+    order:3;
+}
+#navLogo{
+    width: 8vw;  
+    height: 2em;
+    background-image: url(image/FairSVG.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+
+}
+.forBetterReading{
+    background-color: rgba(48, 48, 48, 0.39); 
+    width: 80vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(48, 48, 48, 0.39); 
+    padding: 1vh 1vh;
+    margin-top:1.5vh;
+}
+
+html {
+    scroll-behavior: smooth; /*gleitende Animation nach oben */
+}
+
+
+.backToTop{
+    display: none;
+    display: flex;
+    position: fixed;
+    font-size:6em;
+    bottom: 2vh;
+    right: 2vw;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.backToTop a{
+    color:white;
+}
+/*Media-Queries*/
+
+@media screen and (max-width: 1300px) {
+    #navLogo{
+        height: 2em;
+        width: 14vw;
+    }
+    #navLogoDummie{
+        height: 2em;
+        width: 14vw;
+    }
+
+}
+@media screen and (max-width: 850px) {
+    #navLogo{
+        height: 2.2em;
+        width: 23vw;
+        background-position: center;
+    }
+    #navbar{
+        flex-direction: column;
+        align-items: center;
+        height: 40vh;
+        justify-content: space-between;
+    }
+
+    header{
+        height: 50vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2.5vh;
+        
+    }
+    header#headerMain{
+        height: 3.9em;
+        flex-direction: column;
+        align-items: top;
+        justify-content: flex-start;
+        margin-bottom: 1vh;
+    }
+    ul#navbarMain{
+        flex-direction: column;
+        align-items: center;
+        height: 4em;
+        justify-content: space-between;
+    }
+    .link{
+        font-size:0.9em;
+    }
+    #linkLogo{
+        order:1;
+    }
+    #navBar{
+        order:2;
+    }
+    #navLogoDummie{
+        visibility:hidden;
+    }
+    li{
+        line-height: 1.2em;
+    }
+    .backToTop a{
+        color:rgba(255, 255, 255, 0.829);
+        z-index: 99;
+        font-size:0.6em;
+    }
+    .backToTop{
+        bottom: 0vh;
+        right: 0.8vw;
+    }
+}
+@media screen and (max-height: 400px) and (max-width:600px){
+    #navbar{
+        height:50vh;
+    }
+    header{
+        height: 60vh;
+    } 
+}
+@media screen and (min-height: 401px ) and (max-width:850px) {
+    #navbar{
+        height:6em;
+    }
+    header{
+        height: 6em;
+    }
+}
+@media screen and (max-width: 400px) {
+    footer{
+        flex-direction: column;
+    }
+}
+

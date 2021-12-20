@@ -1,0 +1,135 @@
+.sponsoring{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sponsorBig{
+    height: 20vh;
+    min-width: 30vw;
+    flex-grow: 2;
+    transition: 0.2s all ease-in; /*Übergangsanimation*/
+}
+
+.sponsorBig:hover{
+    transform: scale(90%);
+}
+
+.sponsorSmall{
+    height: 20vh;
+    min-width: 15vw;
+    flex-grow: 1;
+    margin: 0.5vh 0.5vw;
+    transition: 0.2s all ease-in;
+}
+
+.sponsorSmall:hover{
+    transform: scale(90%); /*Skalierung des einzelnen Logos auf 90%*/
+}
+
+.sponsor1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.sponsor2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.sponsor3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.sponsor4{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.position1{
+    order: 1;
+}
+.position2{
+    order: 2;
+}
+.position3{
+    order: 3;
+}
+.position4{
+    order: 4;
+}
+.position5{
+    order: 5;
+}
+.position6{
+    order: 6;
+}
+.position7{
+    order: 7;
+}
+.position8{
+    order: 8;
+}
+.position9{
+    order: 9;
+}
+.position10{
+    order: 10;
+}
+.position11{
+    order: 11;
+}
+.position12{
+    order: 12;
+}
+.position13{
+    order: 13;
+}
+.position14{
+    order: 14;
+}
+.position15{
+    order: 15;
+}
+.position16{
+    order: 16;
+}
+
+.pic1{
+    background-image: url(image/sponsor/codersbay.svg);
+    background-repeat: no-repeat;
+    background-size: contain; /*Gibt das Bild in voller größe ins z.B. Div*/
+    background-position: center;
+}
+
+.pic2{
+    background-image: url(image/sponsor/redbull.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+.pic3{
+    background-image: url(image/sponsor/agilox.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.pic4{
+    background-image: url(image/sponsor/sanag.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

@@ -1,0 +1,58 @@
+#logoMain{
+    display: flex;
+    align-items: center;
+    width: 60vw;
+    height: 30vh;
+    background-image: url(image/FairSVG.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 2%;
+}
+
+.date{
+    text-align: center;
+    font-family: 'Rye', cursive;
+    font-size: 1.5em;
+}
+.date::before, /* Striche for und nach .Date (Datum) */
+.date::after {
+    display: inline-block;
+    content: "";
+    border-top: .2em solid rgb(255, 255, 255);
+    width: 8em;
+    margin: 0 1em;
+    transform: translateY(-0.2em); /*Verschiebung des Borders in die Mitte*/
+}
+
+.artist{
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+
+}
+
+.artist>a{
+    margin-block-start: 0.5em;
+    letter-spacing: 2px;
+    color:white;
+    text-decoration: none;
+    font-size: 1.3em; 
+    transition: all 0.4s ease;
+}
+.artist>a:hover{
+    font-size: 1.7em;
+}
+.artist>p{
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 950px) {
+    .date::before,
+    .date::after {
+        display:none;
+	}
+    #logoMain{
+        width: 90vw;
+        height: 50vh;
+    }
+}

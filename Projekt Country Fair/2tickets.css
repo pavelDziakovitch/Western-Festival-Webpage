@@ -1,0 +1,50 @@
+table, tr, td, th {
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    height: 50px;
+    border-radius: 10px;
+    font-family: 'Rye', cursive;
+}
+
+table th{ /*font-weight: bold;text-align: center;}*/
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Rye', cursive;
+}
+
+#tableBox{ /*margin-bottom: 1vh*/
+    display: flex;
+    flex-direction: column;
+    font-family: 'Crimson Text', serif;
+    margin-bottom: 1vh;
+}
+
+#column1, #column2{
+    text-align: center;
+    font-family: 'Rye', cursive;
+}
+                                       
+/*border-radius: 10px;font-family: 'Rye', cursive;font-size: 13px;*/             
+                               
+.select{
+    height: 40px;
+    width: 130px;
+    margin-top: 50px;
+    font-family: 'Rye', cursive;
+    font-size: 13px;
+    border-radius: 10px;
+}
+button{ /*borer-radius: 10px;*/
+    border-radius: 10px;
+}
+#forTickets{ /*width 50 vw*/
+    width: 50vw;
+}
+
+@media screen and (max-width: 500px) {
+    #forTickets{
+        width:90vw;
+    } 
+}
+

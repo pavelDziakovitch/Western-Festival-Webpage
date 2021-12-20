@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <!-- Creators: Emanuel Leutgeb - Daniela Schlögelhofer - Pavel Dziakovitch-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="Stylesheet" href="index.css">
+        <link rel="Stylesheet" href="3locationmap.css">
+        <link rel="shortcut icon" type="image/x-icon" href="image/favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Einbindung von Awesome Font Icon-->
+        <!-- Font for Text -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+        <!-- Font for Headline -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+        <title>Lageplan</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div id="navLogoDummie">
+            </div>
+            <ul id="navbar">
+                <li>
+                    <a class="link" href="2tickets.html">Tickets</a>
+                </li>
+                <li>
+                    <a class="link" href="3locationmap.html">Lageplan</a>
+                </li>
+                <li>
+                    <a class="link" href="4infos.html">Infos</a>
+                </li>
+            </ul>
+
+            <a href="index.html" id="linkLogo">
+                <div id="navLogo">
+                </div>
+            </a>
+        </header>
+
+        <!--------------------------------------------------------------------------------------------------------->
+
+        <!-- Locationmap -->
+        <main>
+            <div class="forBetterReading" id="forMaps">
+
+                <p>Sie finden das Festival unter folgender Adresse: </p>
+                <div style='height:60vh;width:100%; '><iframe width="" height="300" src=https://maps.google.de/maps?hl=de&q=%20Greiner+Straße+63%20Perg&t=&z=12&ie=utf8&iwloc=b&output=embed frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style='height:100%;width:100%; border-radius: 10px;'> Von <a href="http://hope-hoerbücherei.de"  style="font-size:10px;" title="hope" target="_blank">hope</a></iframe><p style="text-align:right; margin:0px; padding-top:-10px; line-height:10px;font-size:10px;margin-top: -25px;"> von <a href="http://www.kurierexpress24.de"  style="font-size:10px;" title="Kurier" target="_blank">Kurier</a></p></div>
+            </div>
+            
+            <div class="forBetterReading">
+                <h1>Geländeplan</h1>
+                <img src="image/gelaende.jpg" id="locationMapImg">
+                <h2>Legende</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="image/greendot.png" class="iconsLocation"></img>
+                        </td>
+                        <td>
+                            <p>Eingang</p>
+                        </td>
+                        <td>
+                            <img src="image/wc.png" class="iconsLocation"></img>
+                        </td>
+                        <td>
+                            <p>Toilette</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="image/stage.png" class="iconsLocation"></img>
+                        </td>
+                        <td>
+                            <p>Bühnen</p>
+                        </td>
+                        <td>
+                            <img src="image/food.png" class="iconsLocation"></img>
+                        </td>
+                        <td>
+                            <p>Essenstände</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="image/disabled.png" class="iconsLocation"></img>
+                        </td>
+                        <td>
+                            <p>Erhöhte Bühne<br>für Rollstuhlfahrer</p>
+                        </td>
+                        <td>
+                            <img src="image/redcross.png" class="iconsLocation"></img>
+                        </td>
+                        <td>
+                            <p>Sanitäter-Zelt</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="image/tent.png" class="iconsLocation"></img>
+                        </td>
+                        <td>
+                            <p>Camping-Platz</p>
+                        </td>
+                        <td>
+                            <img src="image/grill.png" class="iconsLocation"></img>
+                        </td>
+                        <td>
+                            <p>Grillplatz</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="image/lodge.png" class="iconsLocation"></img>
+                        </td>
+                        <td>
+                            <p>Hütten</p>
+                        </td>
+                        <td>
+                            <img src="image/drop.png" class="iconsLocation"></img>
+                        </td>
+                        <td>
+                            <p>Wasserstellen</p>
+                        </td>
+                    </tr>
+                </table>
+                <p>Das gesamte Gelände ist barrierefrei. Bei Fragen können Sie uns gerne unter <a href="4infos.html">"Info"</a> durch das Kontaktformular kontaktieren!</p>
+            </div>       
+        </main>
+
+        <!--------------------------------------------------------------------------------------------------------->
+
+        <!-- Footer -->
+        <footer>
+            <a class="link" id="footerText" href="5imprint.html">Impressum & DSGVO</a>
+            <a class="link" id="footerText" href="6sponsor.html">Sponsor</a>
+        </footer>
+
+        <!--------------------------------------------------------------------------------------------------------->
+
+        <!--Scroll back to top-->
+        <div class="backToTop"><a href="#navLogoDummie"><i class="fa fa-angle-double-up"></i></a></div>
+
+    </body>
+</html>
